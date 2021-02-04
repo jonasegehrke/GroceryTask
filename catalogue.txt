@@ -1,0 +1,6 @@
+Potato 20.5
+Tomato 10.0
+Salmon 35.0
+Steak 50.95
+Coffee 40.95
+Milk 8.5
