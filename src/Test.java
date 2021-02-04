@@ -10,13 +10,13 @@ public class Test {
 
 
         //Adding store selection from txt file
-        ArrayList<Product> listOfProducts = new ArrayList();
+        ArrayList<Product> listOfProducts = new ArrayList(); //saving all products in an arraylist
         try {
-            File myFile = new File("catalogue.txt");
-            Scanner myReader = new Scanner(myFile);
-            while (myReader.hasNextLine()){
-                String[] bits = myReader.nextLine().split(" ");
-                listOfProducts.add(new Product(bits[0], Double.parseDouble(bits[1])));
+            File myFile = new File("catalogue.txt");    //Creating new file
+            Scanner myReader = new Scanner(myFile);             //Creating scanner to file
+            while (myReader.hasNextLine()){                     //reading file
+                String[] bits = myReader.nextLine().split(" ");     //Split each line into array
+                listOfProducts.add(new Product(bits[0], Double.parseDouble(bits[1])));      //Create product
             }
         }catch (FileNotFoundException e){
             e.printStackTrace();
