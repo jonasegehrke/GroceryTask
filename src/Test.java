@@ -24,22 +24,23 @@ public class Test {
 
 
         //Creating the GroceryList
-        GroceryList list = new GroceryList();
+        GroceryList groceryList = new GroceryList();
 
         //adding groceries to the list
-        list.add(new GroceryItem(listOfProducts.get(0), 2));
-        list.add(new GroceryItem(listOfProducts.get(1),1));
-        list.add(new GroceryItem(listOfProducts.get(2),1));
-        list.add(new GroceryItem(listOfProducts.get(3),3));
-        list.add(new GroceryItem(listOfProducts.get(4),2));
-        list.add(new GroceryItem(listOfProducts.get(5),4));
+        groceryList.add(new GroceryItem(listOfProducts.get(0), 2));
+        groceryList.add(new GroceryItem(listOfProducts.get(1),1));
+        groceryList.add(new GroceryItem(listOfProducts.get(2),1));
+        groceryList.add(new GroceryItem(listOfProducts.get(3),3));
+        groceryList.add(new GroceryItem(listOfProducts.get(4),2));
+        groceryList.add(new GroceryItem(listOfProducts.get(5),4));
 
         //Print to console
         System.out.println("This is your Grocery list");
-        for(int i = 0; i < list.getList().size(); i++){
-            System.out.println(list.getList().get(i));
+        for(int i = 0; i < groceryList.getList().size(); i++){
+            GroceryItem currentItem = groceryList.getList().get(i);
+            System.out.println(currentItem);
         }
-        System.out.println("Total: " + list.getTotalCost() + " DKK");
+        System.out.println("Total: " + groceryList.getTotalCost() + " DKK");
 
 
     }

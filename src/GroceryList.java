@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class GroceryList {
-    private ArrayList list = new ArrayList();
+    private ArrayList<GroceryItem> list = new ArrayList();
     private double totalCost;
 
     public GroceryList(){
@@ -16,7 +16,7 @@ public class GroceryList {
         return totalCost;
     }
 
-    public ArrayList getList(){
+    public ArrayList<GroceryItem> getList(){
         return list;
     }
 
